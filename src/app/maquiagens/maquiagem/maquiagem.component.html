@@ -1,0 +1,14 @@
+<a [routerLink]="['/maquiagens', maquiagem.id]">
+  <div class="place-info-box" >
+    <span class="place-info-box-icon"><img [src]="maquiagem.imagePath" /></span>
+
+    <div class="place-info-box-content">
+      <span class="place-info-box-text">{{ maquiagem.name }}</span>
+      <span class="place-info-box-star"><i class="fa fa-star"></i>{{maquiagem.rating}}</span>
+      <span class="place-info-box-text">{{ maquiagem.descricao}}</span>
+      <span class="place-info-box-star"><i class="fa fa-star"></i>{{maquiagem.valor}}</span>
+    </div>
+    <!-- /.info-box-content -->
+  </div>
+</a>
+

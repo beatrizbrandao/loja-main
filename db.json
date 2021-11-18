@@ -1,0 +1,21 @@
+{
+ "maquiagens": [
+  {
+    "id":"PAYOT",
+    "name": "+ PAYOT",
+    "descricao": "Base Líquida Matte HD Boca Rosa Beauty by Payot 3 - Francisca",
+    "valor": "R$ 35,99",
+    "rating": 5.0,
+    "imagePath": "assets/img/maquiagens/base.jpg"
+  },
+  {
+    "id": "BRUNA TAVARES",
+    "name": "+ BRUNA TAVARES",
+    "descricao": "Bt Gloss Marina Bruna Tavares - 3,5ml",
+    "valor": "R$ 35,59",
+    "rating": 2.0,
+    "imagePath": "assets/img/maquiagens/gloss.jpg"
+  }
+],
+"orders": []
+}

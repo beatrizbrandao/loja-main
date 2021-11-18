@@ -1,0 +1,84 @@
+
+<!-- INíCIO do CONTEÚDO -->
+<div class="form">
+<table border="1px" style="border-top-color:#fcfcfc;  border-bottom-color:#fafafa; border-left-color:#fafafa; border-right-color:#fafafa; background-color: #fcfcfc; margin-left: 100px;"> <!--width: 200px; style="margin-left: -200px;"-->
+  <tr>
+    <td>
+<form action="/action_page.php">
+  <label for="fname" style="text-align: center;">Cadastre seu e-mail e receba nossas.
+    ofertas em primeira mão:</label>
+  <input style="margin-left: 13px;" type="text" id="fname" name="fname" value="e-mail">
+  <input style="margin-left: 13px; margin-top: 5px; margin-bottom: 5px;"type="submit">
+</form>
+    </td>
+  </tr>
+</table>
+  <ul class="list-group">
+    <li class="list-group-item" style="margin-left: 100px; width: 175px; margin-top: 10px; background-color:#fafafa ; font-size: 20px;"><p>Marcas</p></li>
+    <li class="list-group-item" style="margin-left: 100px; width: 175px;">Payout</li>
+    <li class="list-group-item" style="margin-left: 100px; width: 175px;">Anita</li>
+    <li class="list-group-item" style="margin-left: 100px; width: 175px;">Bruna Tavares</li>
+    <li class="list-group-item" style="margin-left: 100px; width: 175px;">Bio extratus</li>
+  </ul>
+
+</div>
+    <div class="form">
+      <table>
+      <tr>
+        <td>
+        <img style="margin-left: 200px; margin-top: -190px;"src="assets/img/maquiagens/fundoprodutos.jpg" width="800px">
+      </td>
+      </tr>
+    </table>
+    </div>
+
+
+<section class="content-header">
+  <style>
+    h1{
+      color:#191970;
+    }
+    .form {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 40px;
+  }
+  div{
+    margin-top: 5px;
+  }
+  h1{
+    margin-top: 90px;
+  }
+  </style>
+  <h1>
+    Produtos
+  </h1>
+</section>
+<section class="content">
+  <div class="row">
+          <div class="col-sm-6 col-xs-12" *ngFor="let maquiagem of maquiagens">
+            <a [routerLink]="['/maquiagens', maquiagem.id]">
+              <div class="place-info-box">
+                <span class="place-info-box-icon"><img [src]="maquiagem.imagePath" /></span>
+
+                <div class="place-info-box-content">
+                  <span class="place-info-box-text">{{ maquiagem.name }}</span>
+                  <span class="place-info-box-star"><i class="fa fa-star"></i>{{maquiagem.rating}}</span>
+                  <span class="place-info-box-detail">{{ maquiagem.descricao }}</span>
+                  <span class="place-info-box-detail">{{ maquiagem.valor}}</span>
+
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+            </a>
+          </div>
+          <!-- /.col -->
+
+        </div>
+
+</section>
+
+
+<!-- FIM  do CONTEÚDO -->
